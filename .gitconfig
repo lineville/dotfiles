@@ -1,0 +1,26 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Liam Neville
+	email = lineville@github.com
+	signingkey = 5DC0D6C64452DAED
+# Please adapt and uncomment the following lines:
+#	name = Liam Neville
+#	email = lineville@github.com
+[init]
+	defaultBranch = main
+[core]
+	autocrlf = input
+[commit]
+	gpgsign = true
+[gpg]
+	program = /opt/homebrew/bin/gpg
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[pull]
+	rebase = true
+	ff = false
+[sendpack]
+	sideband = false
