@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "create-redwood-app": "^1.5.1",
+    "tsc": "^2.0.4"
+  }
+}
